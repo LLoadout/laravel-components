@@ -1,0 +1,32 @@
+{
+    "name": "lloadout/blade-components",
+    "description": "Smart re-usable blade components.  Built on top of BladeUI Kit ",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dieter Coopman",
+            "email": "dieter@deltasolutions.be"
+        }
+    ],
+    "require": {
+        "blade-ui-kit/blade-ui-kit" : "0.2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LLoadoutComponents\\LLoadoutComponentsServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "LLoadoutComponents\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
