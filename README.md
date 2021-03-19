@@ -6,16 +6,22 @@
 With LLoadout Components you will pull in the best off class frontend components.
 We don't re-invent the wheel but we bring the best components together.  
 
-# Dependencies
+## Installation 
+
+```shell
+composer require lloadout/components
+```
+
+## Dependencies
 
 - [Blade Ui Kit](https://github.com/blade-ui-kit)
 
-# Extra LLoadout components
+## Extra LLoadout components
 
 Some of the components listed above are missing some features, features we provide.
 The components provide by LLoadout are prefixed with 'load'.
 
-## Select 
+### Select 
 
 ```shell
 @php($options = [1 => 'first', 2 => 'second']);
