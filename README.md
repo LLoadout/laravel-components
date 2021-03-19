@@ -1,5 +1,5 @@
 
-![Downloads](https://img.shields.io/packagist/dt/lloadout/blade-components.svg?style=flat-square)
+![Downloads](https://img.shields.io/packagist/dt/lloadout/components.svg?style=flat-square)
 
 # Components
 
