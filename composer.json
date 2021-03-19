@@ -1,7 +1,8 @@
 {
     "name": "lloadout/components",
-    "description": "Smart re-usable blade components.  Built on top of BladeUI Kit ",
+    "description": "With LLoadout Components you will pull in the best off class frontend components.",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dieter Coopman",
