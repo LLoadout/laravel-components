@@ -1,6 +1,6 @@
 {
     "name": "lloadout/components",
-    "description": "With LLoadout Components you will pull in the best off class frontend components.",
+    "description": "With LLoadout Components you will pull in the best off class Laravel frontend components.",
     "type": "library",
     "license": "MIT",
     "authors": [

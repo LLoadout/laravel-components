@@ -3,7 +3,7 @@
 
 # Components
 
-With LLoadout Components you will pull in the best off class frontend components.
+With LLoadout Components you will pull in the best off class Laravel frontend components.
 We don't re-invent the wheel but we bring the best components together.  
 
 ## Installation 
