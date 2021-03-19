@@ -1,16 +1,25 @@
 
 ![Downloads](https://img.shields.io/packagist/dt/lloadout/blade-components.svg?style=flat-square)
 
-# Blade Components
+# Components
 
-This package provides some additional blade components for BladeUiKit.
-I will delete this repo if the elements i provide are also included in BladeUIKit
+With LLoadout Components you will pull in the best off class frontend components.
+We don't re-invent the wheel but we bring the best components together.  
+
+# Dependencies
+
+- [Blade Ui Kit](https://github.com/blade-ui-kit)
+
+# Extra LLoadout components
+
+Some of the components listed above are missing some features, features we provide.
+The components provide by LLoadout are prefixed with 'load'.
 
 ## Select 
 
 ```shell
 @php($options = [1 => 'first', 2 => 'second']);
-<x-select name="your-name" :options="$options" ></x-select>
+<x-load-select name="your-option" :options="$options" ></x-select>
 ```
 
 This markup will render as

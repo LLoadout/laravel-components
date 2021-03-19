@@ -29,6 +29,6 @@ class LLoadoutComponentsServiceProvider extends ServiceProvider
 
     protected function registerComponent(string $component)
     {
-        Blade::component('load::components.' . $component, $component);
+        Blade::component('load::components.'.$component, "load-".$component);
     }
 }

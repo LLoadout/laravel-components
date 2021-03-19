@@ -1,5 +1,5 @@
 {
-    "name": "lloadout/blade-components",
+    "name": "lloadout/components",
     "description": "Smart re-usable blade components.  Built on top of BladeUI Kit ",
     "type": "library",
     "authors": [
