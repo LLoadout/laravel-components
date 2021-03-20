@@ -1,0 +1,1 @@
+<div x-data="" class="chart" id="pie-chart-{{ $this->id }}" x-init="drawPieChart(@this.labels,@this.data,@this.title,@this.chartid);"></div>

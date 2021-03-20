@@ -21,19 +21,41 @@ composer require lloadout/components
 Some of the components listed above are missing some features, features we provide.
 The components provide by LLoadout are prefixed with 'load'.
 
+### Load the assets 
+
+    @lloadoutScripts
+
 ### Select 
 
-```shell
-@php($options = [1 => 'first', 2 => 'second']);
-<x-load-select name="your-option" :options="$options" ></x-select>
-```
+
+    @php($options = [1 => 'first', 2 => 'second']);
+    <x-load-select name="your-option" :options="$options" ></x-select>
+
 
 This markup will render as
 
-```shell
-<select name="your-name">
+
+    <select name="your-name">
         <option value="1">first</option>
         <option value="2">second</option>
-</select>
-```
-You can pass in any iterable keyed by id => value
+    </select>
+
+
+You can pass in any iterable keyed by a key value pair
+
+### Graphs
+
+The graphc 
+
+#### Barchart
+
+    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[['data' => [10,20,70]]]" :labels="['a']"></x-load-barchart>
+
+#### Piechart
+
+    <x-load-piechart title="Vervallen facturen" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
+
+#### Linechart
+    <x-load-linechart title="Vervallen facturen" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
+
+

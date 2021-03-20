@@ -1,0 +1,1 @@
+<livewire:barchart :title="$title" :key="$key" :orientation='$orientation' :data="$data" :labels="$labels"></livewire:barchart>

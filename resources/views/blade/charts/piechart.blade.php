@@ -1,0 +1,1 @@
+<livewire:piechart :title="$title" :key="$key" :data="$data" :labels="$labels"></livewire:piechart>
