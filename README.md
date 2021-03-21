@@ -45,7 +45,7 @@ You can pass in any iterable keyed by a key value pair
 
 ### Graphs
 
-The graphc 
+The charts components make use of apexcharts.  Only three types of graphs are implemented in lloadout for now. 
 
 #### Barchart
 
@@ -53,9 +53,9 @@ The graphc
 
 #### Piechart
 
-    <x-load-piechart title="Vervallen facturen" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
+    <x-load-piechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
 
 #### Linechart
-    <x-load-linechart title="Vervallen facturen" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
+    <x-load-linechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
 
 
