@@ -32,7 +32,7 @@ function drawBarChart(labels, data, orientation, title, id) {
             toolbar: {
                 export: {
                     csv: {
-                        filename: title + ".csv",
+                        filename: title,
                         columnDelimiter: ';',
                         headerCategory: 'category',
                         headerValue: 'value',
@@ -41,10 +41,10 @@ function drawBarChart(labels, data, orientation, title, id) {
                         }
                     },
                     svg: {
-                        filename: title + ".svg",
+                        filename: title,
                     },
                     png: {
-                        filename: title + ".png",
+                        filename: title,
                     }
                 },
             }

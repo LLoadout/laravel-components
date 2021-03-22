@@ -14,7 +14,7 @@ class BarChart extends Component
 
     public function mount($data = [], $labels = [], $orientation = 'vertical', $title = '')
     {
-        $this->data        = $data;
+        $this->data        = $this->transformData($data);
         $this->labels      = $labels;
         $this->orientation = ($orientation == 'vertical') ? false : true;
         $this->title       = $title;
@@ -27,5 +27,18 @@ class BarChart extends Component
             return;
         }
         return view('load::livewire.charts.barchart');
+    }
+
+    private function transformData(array $data)
+    {
+        if(is_array($data[0])){
+            return collect($data)->map(function($set){
+                return  ['data' => $set];
+            })->toArray();
+        }else{
+            return [['data' => $data]];
+        }
+
+
     }
 }

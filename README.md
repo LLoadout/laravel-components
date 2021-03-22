@@ -15,6 +15,8 @@ composer require lloadout/components
 ## Dependencies
 
 - [Blade Ui Kit](https://github.com/blade-ui-kit)
+- [Apex charts](https://apexcharts.com/)
+- [Select 2](https://select2.org/)
 
 ## Extra LLoadout components
 
@@ -26,7 +28,6 @@ The components provide by LLoadout are prefixed with 'load'.
     @lloadoutScripts
 
 ### Select 
-
 
     @php($options = [1 => 'first', 2 => 'second']);
     <x-load-select name="your-option" :options="$options" ></x-select>
@@ -41,15 +42,32 @@ This markup will render as
     </select>
 
 
-You can pass in any iterable keyed by a key value pair
+You can pass in any iterable keyed by a key value pair.  If you add a class 'searchable' , the select field changes into a searchable select2 field.
 
 ### Graphs
 
-The charts components make use of apexcharts.  Only three types of graphs are implemented in lloadout for now. 
+The charts components make use of apexcharts.  Only three types of graphs are implemented in lloadout for now.
+I only created a basic implementation, if you want to add more power to the graphics I refer to Apex Charts itself.
+
+All charts have three params 
+
+* title : the title for the graph
+* data : an array of data 
+* labels : an array of labels
+
+The bar chart has an extra param
+* orientation : this can be 'horizontal' or 'vertical'
 
 #### Barchart
 
-    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[['data' => [10,20,70]]]" :labels="['a']"></x-load-barchart>
+    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[10,20,70]" :labels="['a']"></x-load-barchart>
+
+#### Stacked barchart
+
+For the stacked barchart you can use the same tag as for the simple barchart , it takes an array of arrays as data
+
+    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[[10,20,70],[10,20,70],[10,20,70]]" :labels="['a']"></x-load-barchart>
+
 
 #### Piechart
 
