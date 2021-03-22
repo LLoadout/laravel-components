@@ -30,8 +30,7 @@ The components provide by LLoadout are prefixed with 'load'.
 ### Select 
 
     @php($options = [1 => 'first', 2 => 'second']);
-    <x-load-select name="your-option" :options="$options" ></x-select>
-
+    <x-load-select name="your-name" :options="$options" class="searchable"></x-select>
 
 This markup will render as
 
