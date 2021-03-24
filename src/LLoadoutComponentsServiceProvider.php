@@ -7,6 +7,7 @@ use Livewire\Livewire;
 use LLoadoutComponents\Http\Livewire\BarChart;
 use LLoadoutComponents\Http\Livewire\LineChart;
 use LLoadoutComponents\Http\Livewire\PieChart;
+use LLoadoutComponents\Http\Livewire\Signature;
 
 
 class LLoadoutComponentsServiceProvider extends ServiceProvider
@@ -33,6 +34,8 @@ class LLoadoutComponentsServiceProvider extends ServiceProvider
             Blade::component('load::blade.charts.piechart', "load-piechart");
             Blade::component('load::blade.charts.linechart', "load-linechart");
             Blade::component('load::blade.forms.select', "load-select");
+            Blade::component('load::blade.forms.daterange', "load-daterange");
+            Blade::component('load::blade.signature.signature', "load-signature");
         });
     }
 
@@ -41,6 +44,7 @@ class LLoadoutComponentsServiceProvider extends ServiceProvider
         Livewire::component('barchart', BarChart::class);
         Livewire::component('piechart', PieChart::class);
         Livewire::component('linechart', LineChart::class);
+        Livewire::component('signature', Signature::class);
     }
 
     private function bootDirectives(): void

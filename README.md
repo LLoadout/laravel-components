@@ -17,6 +17,7 @@ composer require lloadout/components
 - [Blade Ui Kit](https://github.com/blade-ui-kit)
 - [Apex charts](https://apexcharts.com/)
 - [Select 2](https://select2.org/)
+- [Signature pad](https://github.com/szimek/signature_pad)
 
 ## Extra LLoadout components
 
@@ -74,5 +75,11 @@ For the stacked barchart you can use the same tag as for the simple barchart , i
 
 #### Linechart
     <x-load-linechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
+
+### Signature 
+
+This signature component will create a textfield in your html , in that textfield a base64 encoded png stream will be stored.
+
+    <x-load-signature name="my-signature" width="400" height="400" background="white" color="black" />
 
 
