@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="https://github.com/LLoadout/assets/blob/master/LLoadout_components.png" width="500" title="LLoadout logo">
+</p>
 
 ![Downloads](https://img.shields.io/packagist/dt/lloadout/components.svg?style=flat-square)
 
