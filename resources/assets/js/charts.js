@@ -53,6 +53,9 @@ function drawBarChart(labels, data, orientation, title, id) {
         legend: {
             show: false
         },
+        yaxis: {
+            decimalsInFloat: 0
+        },
         xaxis: {
             categories: labels,
             labels: {
