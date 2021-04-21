@@ -50,6 +50,9 @@ function drawBarChart(labels, data, orientation, title, id) {
             }
         },
         series: data,
+        legend: {
+            show: false
+        },
         xaxis: {
             categories: labels,
             labels: {
