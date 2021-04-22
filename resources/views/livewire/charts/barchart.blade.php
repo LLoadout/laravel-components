@@ -1,1 +1,1 @@
-<div x-data="" class="chart" id="bar-chart-{{ $this->id }}" x-init="drawBarChart(@this.labels,@this.data,@this.orientation,@this.title,@this.chartid);"></div>
+<div x-data="" class="chart" id="bar-chart-{{ $this->id }}" x-init="drawBarChart(@this.labels,@this.data,@this.orientation,@this.title,@this.chartid, @this.chartkey);"></div>

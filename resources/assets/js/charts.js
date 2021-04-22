@@ -1,4 +1,4 @@
-function drawBarChart(labels, data, orientation, title, id) {
+function drawBarChart(labels, data, orientation, title, id, chartKey) {
 
     if (!orientation) {
         var yaxisdata = {
@@ -28,6 +28,11 @@ function drawBarChart(labels, data, orientation, title, id) {
             },
         },
         chart: {
+            events: {
+                click: function(event, chartContext, config) {
+                    Livewire.emit('showChartDetails',  { 'chartKey' : chartKey, 'dataPointIndex' : config.dataPointIndex, 'seriesIndex' : config.seriesIndex });
+                }
+            },
             type: 'bar',
             toolbar: {
                 export: {
@@ -50,12 +55,6 @@ function drawBarChart(labels, data, orientation, title, id) {
             }
         },
         series: data,
-        legend: {
-            show: false
-        },
-        yaxis: {
-            decimalsInFloat: 0
-        },
         xaxis: {
             categories: labels,
             labels: {
@@ -63,6 +62,13 @@ function drawBarChart(labels, data, orientation, title, id) {
                 rotate: -45
             }
         },
+        yaxis: {
+            decimalsInFloat: 0
+        },
+        legend: {
+            show: false
+        },
+
         dataLabels: {
             enabled: false,
         },
