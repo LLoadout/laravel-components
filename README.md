@@ -33,6 +33,10 @@ The components provide by LLoadout are prefixed with 'load'.
 
 ### Select 
 
+<p align="center">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/select.png" width="400" title="LLoadout Components - select box">
+</p>
+
     @php($options = [1 => 'first', 2 => 'second']);
     <x-load-select name="your-name" :options="$options" class="searchable"></x-select>
 
