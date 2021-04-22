@@ -63,13 +63,15 @@ The bar chart has an extra param
 
 #### Barchart
 <p align="center">
-    <img src="https://github.com/LLoadout/assets/blob/master/components/barchart-horizontal.png" title="LLoadout Components - bar chart">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/barchart-horizontal.png" width="400" title="LLoadout Components - bar chart">
 </p>
+
     <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[10,20,70]" :labels="['a']"></x-load-barchart>
 
 #### Stacked barchart
+
 <p align="center">
-    <img src="https://github.com/LLoadout/assets/blob/master/components/barchart-stacked.png" title="LLoadout Components - stacked bar chart">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/barchart-stacked.png" width="400" title="LLoadout Components - stacked bar chart">
 </p>
 For the stacked barchart you can use the same tag as for the simple barchart , it takes an array of arrays as data
 
@@ -77,15 +79,19 @@ For the stacked barchart you can use the same tag as for the simple barchart , i
 
 
 #### Piechart
+
 <p align="center">
-    <img src="https://github.com/LLoadout/assets/blob/master/components/piechart.png" title="LLoadout Components - pie chart">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/piechart.png" width="400" title="LLoadout Components - pie chart">
 </p>
+    
     <x-load-piechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
 
 #### Linechart
+
 <p align="center">
-    <img src="https://github.com/LLoadout/assets/blob/master/components/linechart.png" title="LLoadout Components - line chart">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/linechart.png" width="400" title="LLoadout Components - line chart">
 </p>
+    
     <x-load-linechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
 
 ### Signature 
