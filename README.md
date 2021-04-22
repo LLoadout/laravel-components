@@ -81,6 +81,10 @@ For the stacked barchart you can use the same tag as for the simple barchart , i
 
 ### Signature 
 
+<p align="center">
+    <img src="https://github.com/LLoadout/assets/blob/master/components/signature.gif" title="LLoadout Components - signature">
+</p>
+
 This signature component will create a textfield in your html , in that textfield a base64 encoded png stream will be stored.
 
     <x-load-signature name="my-signature" width="400" height="400" background="white" color="black" />
