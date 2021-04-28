@@ -34,11 +34,11 @@ final class LLoadOutComponents
                 '<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>',
                 '<script>function signPad(){return{signature:"",jpeg:"",draw(t=500,e=400,i="white",s="black"){var a=document.createElement("canvas");a.width=t,a.height=e,a.style.zIndex=8,a.style.background=i,a.style.position="absolute",a.style.border="1px solid #C0C0C0",a.position="relative",this.signature=new SignaturePad(a),this.signature.minWidth=2,this.signature.maxWidth=2,this.signature.penColor=s,this.signature.onEnd=(()=>this.save()),this.$el.appendChild(a)},save(){this.jpeg=this.signature.toDataURL("image/png")},clear(){this.signature.clear()}}}</script>'
             ],
-            "weather"   => [
-                '<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>',
-                '<script type="text/javascript" src="https://raw.githubusercontent.com/andrewplummer/Sugar/2.0.4/dist/sugar.min.js"></script>',
-                '<script src="https://cdnjs.cloudflare.com/ajax/libs/weather/0.0.2/weather.min.js" integrity="sha512-jGQomBlypWhDbIYakihhSlQjdXr/N8rDqwldjW+t9XKHBp4uOaEI/4eShQLHrsgIgX9ZgCQcH/Vrx/AhGDv1rw==" crossorigin="anonymous"></script>'
-            ]
+//            "weather"   => [
+//                '<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>',
+//                '<script type="text/javascript" src="https://raw.githubusercontent.com/andrewplummer/Sugar/2.0.4/dist/sugar.min.js"></script>',
+//                '<script src="https://cdnjs.cloudflare.com/ajax/libs/weather/0.0.2/weather.min.js" integrity="sha512-jGQomBlypWhDbIYakihhSlQjdXr/N8rDqwldjW+t9XKHBp4uOaEI/4eShQLHrsgIgX9ZgCQcH/Vrx/AhGDv1rw==" crossorigin="anonymous"></script>'
+//            ]
         ];
 
         return collect($scripts)->map(function (array $scripts) {
