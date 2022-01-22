@@ -70,7 +70,7 @@ The bar chart has an extra param
     <img src="https://github.com/LLoadout/assets/blob/master/components/barchart-horizontal.png" width="400" title="LLoadout Components - bar chart">
 </p>
 
-    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[10,20,70]" :labels="['a']"></x-load-barchart>
+    <x-load-barchart title="Provide a title" chartkey="your-name" key="delayed-{{ now() }}" orientation='horizontal' :data="[10,20,70]" :labels="['a']"></x-load-barchart>
 
 #### Stacked barchart
 
@@ -79,7 +79,7 @@ The bar chart has an extra param
 </p>
 For the stacked barchart you can use the same tag as for the simple barchart , it takes an array of arrays as data
 
-    <x-load-barchart title="Provide a title" key="delayed-{{ now() }}" orientation='horizontal' :data="[[10,20,70],[10,20,70],[10,20,70]]" :labels="['a']"></x-load-barchart>
+    <x-load-barchart title="Provide a title" chartkey="your-name" key="delayed-{{ now() }}" orientation='horizontal' :data="[[10,20,70],[10,20,70],[10,20,70]]" :labels="['a']"></x-load-barchart>
 
 
 #### Piechart
@@ -88,7 +88,7 @@ For the stacked barchart you can use the same tag as for the simple barchart , i
     <img src="https://github.com/LLoadout/assets/blob/master/components/piechart.png" width="400" title="LLoadout Components - pie chart">
 </p>
     
-    <x-load-piechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
+    <x-load-piechart title="Provide a title" chartkey="your-name" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-piechart>
 
 #### Linechart
 
@@ -96,7 +96,7 @@ For the stacked barchart you can use the same tag as for the simple barchart , i
     <img src="https://github.com/LLoadout/assets/blob/master/components/linechart.png" width="400" title="LLoadout Components - line chart">
 </p>
     
-    <x-load-linechart title="Provide a title" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
+    <x-load-linechart title="Provide a title" chartkey="your-name" key="delayed-{{ now() }}" :data="[10,20,70]" :labels="['a']"></x-load-linechart>
 
 ### Signature 
 
