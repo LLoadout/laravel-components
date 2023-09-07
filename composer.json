@@ -10,9 +10,9 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0|^8.1",
+        "php": "^7.4|^8.0|^8.1|^8.2",
         "livewire/livewire": "^2.0",
-        "blade-ui-kit/blade-ui-kit" : "^0.3.3"
+        "blade-ui-kit/blade-ui-kit" : "^0.4"
     },
     "extra": {
         "laravel": {
